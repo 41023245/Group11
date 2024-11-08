@@ -2,6 +2,26 @@ import streamlit as st
 from PIL import Image
 st.title("實驗5.溫度與散熱實驗")
 
+file_paths = {
+    "doc": "file/第11組 實驗5.溫度與散熱實驗.doc",
+    "pdf": "file/第11組 實驗5.溫度與散熱實驗.pdf",
+    "xls": "file/第11組 實驗5.溫度與散熱實驗.xls"
+}
+
+def create_download_button(file_path, label, mime_type):
+    with open(file_path, "rb") as f:
+        file_content = f.read()
+    st.download_button(
+        label=label,
+        data=file_content,
+        file_name=file_path.split("/")[-1],  # 檔案名稱
+        mime=mime_type
+    )
+
+create_download_button(file_paths["doc"], "第11組 實驗5.溫度與散熱實驗.doc", "application/msword")  # doc 檔案
+create_download_button(file_paths["pdf"], "第11組 實驗5.溫度與散熱實驗.pdf", "application/pdf")   # pdf 檔案
+create_download_button(file_paths["xls"], "第11組 實驗5.溫度與散熱實驗.xls", "application/vnd.ms-excel")  # xls 檔案
+
 st.write("實驗目的:了解物體在不同條件下的散熱過程")
 st.write("實驗設備:1.T-type熱電偶線數條2.水銀溫度計乙支3.加熱片乙片(???)4.鋁合金散熱片乙個5.導熱膏乙罐(共用)6.多功能電表(FLUKE 87-5)乙台7.多功能電表(FLUKE 287)乙台8.直流電源供應器(Agilent U8002A)兩台9.三孔延長線乙條10.銲槍乙支(含銲錫及耗材、電線等)11.照度計乙台")
 st.write("實驗步驟:1.電阻加熱片測試：(1)通10W電源，以TC量測溫度值並記錄於表上2.散熱片溫度量測與熱阻分析：(1)將散熱片塗抹導熱膏後貼附於加熱片上(2)打開電源供應器之電源開關，依照實驗表格之數值設定電流I之大小，並以兩台多功能電表(FLUKE 87-5)K-type熱電偶線，同時量測散熱片上鰭片與底座之溫度，等到溫度穩定後將所得數據記錄於表格中。")
