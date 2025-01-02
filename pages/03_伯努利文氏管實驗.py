@@ -27,7 +27,7 @@ st.write("實驗步驟:1.設備準備 2.測量並設置流量 3.測量壓力 4.�
 # 在這裡添加實驗一的具體內容，如圖表、數據等
 st.video("picture/1.mp4")
 
-image = Image.open('picture/4.jpg')
+image = Image.open('picture/2.jpg')
 st.image(image, caption='圖片1')
-image = Image.open('picture/5.jpg')
+image = Image.open('picture/3.jpg')
 st.image(image, caption='圖片2')
