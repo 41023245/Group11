@@ -23,9 +23,9 @@ create_download_button(file_paths["doc"], "第11組 實驗4.管路磨擦與閥�
 create_download_button(file_paths["pdf"], "第11組 實驗4.管路磨擦與閥特性實驗.pdf", "application/pdf")   # pdf 檔案
 create_download_button(file_paths["xlsx"], "第11組 實驗4.管路磨擦與閥特性實驗.xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")  # xlsx 檔案
 st.markdown("""
-### 一、	實驗目的
+### 一、實驗目的
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本實驗目的就在於測量液體的黏滯係數,並觀察黏滯係數與溫度變化的關係。
-#### 儀器與設備
+### 二、儀器與設備
 1. 測黏滯定儀
 2. 燒杯
 3. 測量電壓機
@@ -42,7 +42,7 @@ with col3:
     image = Image.open('picture/21.jpg')
     st.image(image, caption='圖3.測量電壓機')
 st.markdown("""
-### 二、	實驗原理
+### 三、實驗原理
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黏滯性是流體的性質之一,產生黏滯的原因在於分子的內聚力及附著力。 物體在液體中移動時,因為表面有附著力以及摩擦力而形成阻力,而不同的液體有不同的阻力,經由計算可以了解每一種液體的黏滯係數。黏滯力 f 和施力 F 方向相反，黏滯力 f 的 大小和平行板的面積 A 以及平行板的相對速度 dv 成正比，和平 板間的距離 dr 成反比。)
 """)
 image = Image.open('picture/22.jpg')
