@@ -177,7 +177,10 @@ st.markdown("""
 - **可靠性測試**：設計完成後，進行長時間運行測試以確認真空產生器在不同工作條件下的穩定性和可靠性。
 - **性能測試**：進行抽氣速率、真空度、能效等性能測試，確保設備達到設計要求。
 ### 3.依據原理與工件大小之零組件設計圖
-
+""")
+image = Image.open('picture/62.jpg')
+st.image(image)
+st.markdown("""
 ## 主題二、環境量測與控制裝置機械設計
 ### 1. 散熱器設計與要求規範
 #### 1.1 散熱效能
@@ -246,19 +249,145 @@ st.title("三、實驗量測與數據分析")
 st.markdown("## 主題一、創新夾持裝置機械設計")
 st.markdown("### 1.依照 Excel 檔進行設計參數計算")
 st.markdown("### 2.詳細列出軟體分析之過程(CAD 模型、條件、材料常數、計算方法、其他)")
+col1, col2, col3 = st.columns(3)
+with col1:
+    image = Image.open('picture/68.jpg')
+    st.image(image)
+with col2:
+    image = Image.open('picture/69.jpg')
+    st.image(image)
+with col3:
+    image = Image.open('picture/70.jpg')
+    st.image(image)
+st.write("#### Water 2D(Venturi_Example)")
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/71.jpg')
+    st.image(image, caption='V=10 速度圖')
+with col2:
+    image = Image.open('picture/72.jpg')
+    st.image(image, caption='V=10 壓力圖')
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/75.jpg')
+    st.image(image, caption='V=15 速度圖')
+with col2:
+    image = Image.open('picture/76.jpg')
+    st.image(image, caption='V=15 壓力圖')
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/73.jpg')
+    st.image(image, caption='V=20 速度圖')
+with col2:
+    image = Image.open('picture/74.jpg')
+    st.image(image, caption='V=20 壓力圖')
+st.write("#### Air 2D_Asym(Venturi Exp)")
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/77.jpg')
+    st.image(image, caption='V=6 速度圖')
+with col2:
+    image = Image.open('picture/78.jpg')
+    st.image(image, caption='V=6 壓力圖')
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/79.jpg')
+    st.image(image, caption='V=9.7 速度圖')
+with col2:
+    image = Image.open('picture/80.jpg')
+    st.image(image, caption='V=9.7 壓力圖')
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/81.jpg')
+    st.image(image, caption='V=13.33 速度圖')
+with col2:
+    image = Image.open('picture/82.jpg')
+    st.image(image, caption='V=13.33 壓力圖')
+st.write("#### Air 3D(Venturi Exp)")
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/84.jpg')
+    st.image(image, caption='V=6 速度圖')
+with col2:
+    image = Image.open('picture/83.jpg')
+    st.image(image, caption='V=6 壓力圖')
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/86.jpg')
+    st.image(image, caption='V=9.7 速度圖')
+with col2:
+    image = Image.open('picture/85.jpg')
+    st.image(image, caption='V=9.7 壓力圖')
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/88.jpg')
+    st.image(image, caption='V=13.33 速度圖')
+with col2:
+    image = Image.open('picture/87.jpg')
+    st.image(image, caption='V=13.33 壓力圖')
+st.write("#### Air 3D(Generator)")
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/89.jpg')
+    st.image(image, caption='V=1 速度圖')
+with col2:
+    image = Image.open('picture/90.jpg')
+    st.image(image, caption='V=1 壓力圖')
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/91.jpg')
+    st.image(image, caption='V=5 速度圖')
+with col2:
+    image = Image.open('picture/92.jpg')
+    st.image(image, caption='V=5 壓力圖')
+col1, col2 = st.columns(2)
+with col1:
+    image = Image.open('picture/93.jpg')
+    st.image(image, caption='V=10 速度圖')
+with col2:
+    image = Image.open('picture/94.jpg')
+    st.image(image, caption='V=10 壓力圖')
+image = Image.open('picture/95.jpg')
+st.image(image)
 st.markdown("## 主題二、環境量測與控制裝置機械設計")
 st.markdown("### 1.依照 Excel 檔進行設計參數計算")
-st.markdown("### 2.詳細列出軟體分析之過程(CAD 模型、條件、材料常數、計算方法、其他)")
-st.markdown("## 主題三、bladeless wind turbine 結構設計(僅 Fluent 模擬)")
-st.markdown("### 1.詳細列出軟體分析之過程(CAD 模型、條件、材料常數、計算方法、其他)")
-
-
-
+st.markdown("""
+### 2.詳細列出軟體分析之過程(CAD 模型、條件、材料常數、計算方法、其他)")
+材料:
+- A16061/A17075
+- ADC12
+- Cu
+- Base = 52x52x9.5mm
+- Height = 40mm
+""")
+image = Image.open('picture/66.jpg')
+st.image(image)
+image = Image.open('picture/67.jpg')
+st.image(image)
+st.markdown("""
+## 主題三、bladeless wind turbine 結構設計(僅 Fluent 模擬)
+### 1.詳細列出軟體分析之過程(CAD 模型、條件、材料常數、計算方法、其他)
+幾何條件:
+- D =0.01 m
+- V = 1 m/s
+- air,rho = 1.184 kg/m^3 (25℃, 一大氣壓)
+- air,mu = kg/(m*s) (25℃, 一大氣壓)
+流場條件:
+- Re = 640
+""")
+image = Image.open('picture/63.jpg')
+st.image(image, caption='V=0.1')
+image = Image.open('picture/64.jpg')
+st.image(image, caption='V=1')
+image = Image.open('picture/65.jpg')
+st.image(image, caption='分析結果')
 
 st.markdown("<hr>", unsafe_allow_html=True)
 st.title("四、結果與討論")
 st.markdown("## 主題一、創新夾持裝置機械設計")
 st.markdown("### 1.依照 Excel 檔建立真空產生器與周邊 3D 設計圖(零件、組合、爆炸)")
+image = Image.open('picture/60.jpg')
+st.image(image)
 st.markdown("### 2.依照 Excel 檔建立真空產生器計算書(公式法)")
 st.markdown("### 3.繪圖並討論數值模擬結果及計算書結果與數值模擬(CAE 法)之誤差?")
 image = Image.open('picture/13.jpg')
@@ -290,8 +419,10 @@ st.markdown("""
 - 實驗測量中可能存在微小的壓力波動，影響數據穩定性。
 """)
 st.markdown("## 主題二、環境量測與控制裝置機械設計")
-st.markdown("### 1.依照 Excel 檔建立真空產生器與周邊 3D 設計圖(零件、組合、爆炸)")
-st.markdown("### 2.依照 Excel 檔建立真空產生器計算書(公式法)")
+st.markdown("### 1.依照 Excel 檔建立散熱器與周邊 3D 設計圖(零件、組合、爆炸)")
+image = Image.open('picture/61.jpg')
+st.image(image)
+st.markdown("### 2.依照 Excel 檔建立散熱器器計算書(公式法)")
 st.markdown("### 3.繪圖並討論數值模擬結果及計算書結果與數值模擬(CAE 法)之誤差?")
 image = Image.open('picture/14.jpg')
 st.image(image)

@@ -23,7 +23,7 @@ create_download_button(file_paths["docx"], "第11組 實驗1.雷諾數實驗.doc
 create_download_button(file_paths["pdf"], "第11組 實驗1.雷諾數實驗.pdf", "application/pdf")   # pdf 檔案
 create_download_button(file_paths["xls"], "第11組 實驗1.雷諾數實驗.xls", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")  # xlsx 檔案
 st.write("### 一、實驗目的")
-st.write("以墨汁流入透明之壓克力管流中，觀察流體在管路中流動的情形，並配合計算出")
+st.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以墨汁流入透明之壓克力管流中，觀察流體在管路中流動的情形，並配合計算出")
 st.write("### 二、儀器與設備 ")
 image = Image.open('picture/55.jpg')
 st.image(image, caption='圖1.雷諾數儀器構造')
@@ -44,7 +44,7 @@ df = pd.DataFrame(data)
 df.index += 1  
 st.table(df)
 st.write("### 三、實驗原理") 
-st.write("在研究流體力學的過程中，我們會遇到為數不少的無因次參數，如 Re、Fr、Ma 等，但其中最為大家所熟知的則為 Re，即雷諾數。")
+st.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在研究流體力學的過程中，我們會遇到為數不少的無因次參數，如 Re、Fr、Ma 等，但其中最為大家所熟知的則為 Re，即雷諾數。")
 image = Image.open('picture/56.jpg')
 st.image(image)
 st.markdown("""
